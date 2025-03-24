@@ -1,4 +1,4 @@
-package com.empresa_empresa;
+package com.empresa_jennifer;
 
 import static org.junit.Assert.assertTrue;
 
