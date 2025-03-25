@@ -13,17 +13,17 @@ public class Resposta_04 {
         System.out.println("Digite o segundo numero");
         double segundoNumero = scanner.nextDouble();
 
-        double valor1 = primeiroNumero + segundoNumero;
-        double valor2 = primeiroNumero - segundoNumero;
-        double valor3 = primeiroNumero * segundoNumero;
-        double valor4 = primeiroNumero / segundoNumero;
-        double valor5 = primeiroNumero % segundoNumero;
+        double resultadoSoma = primeiroNumero + segundoNumero;
+        double resultadoSubtracao = primeiroNumero - segundoNumero;
+        double resultadoMultiplicacao = primeiroNumero * segundoNumero;
+        double resultadoDivisao = primeiroNumero / segundoNumero;
+        double resultadoSobra = primeiroNumero % segundoNumero;
 
-        System.out.println("A soma dos valores é: "+valor1);
-        System.out.println("A subtração dos valores é: "+valor2);
-        System.out.println("A multiplicação dos valores é: "+valor3);
-        System.out.println("A divisão dos valores é: "+valor4);
-        System.out.println("A sobra da divisão é: "+valor5);
+        System.out.println("A soma dos valores é: "+resultadoSoma);
+        System.out.println("A subtração dos valores é: "+resultadoSubtracao);
+        System.out.println("A multiplicação dos valores é: "+resultadoMultiplicacao);
+        System.out.println("A divisão dos valores é: "+resultadoDivisao);
+        System.out.println("A sobra da divisão é: "+resultadoSobra);
         
     }
 }
