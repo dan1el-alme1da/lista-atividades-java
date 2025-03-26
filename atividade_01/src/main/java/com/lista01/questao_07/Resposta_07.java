@@ -1,24 +1,23 @@
 package com.lista01.questao_07;
 
-import java.util.Locale;
-import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 
 public class Resposta_07 {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+        double primeiroNumero = Double.parseDouble(JOptionPane.showInputDialog("Digite o primeiro número:"));
+        double segundoNumero = Double.parseDouble(JOptionPane.showInputDialog("Digite o segundo número:"));
+        double terceiroNumero = Double.parseDouble(JOptionPane.showInputDialog("Digite o terceiro número:"));
 
-        System.out.println(" digite tres numeros inteiros");
-        double primeiroNumero = scanner.nextDouble();
-        double segundoNumero = scanner.nextDouble();
-        double terceiroNumero = scanner.nextDouble();
 
         Calculadora calculadora = new Calculadora(primeiroNumero, segundoNumero, terceiroNumero);
 
-        System.out.println("\n--------------RESULTADOS---------------");
-        System.out.println("A soma dos numeros digitados é: "+calculadora.calcularSoma());
-        System.out.println("A Média dos numeros digitados é: "+calculadora.calcularMedia());
+        String resultados =  "Resultados:\n"+
+                "Soma"+ calculadora.calcularSoma()+"\n"+
+                "Média"+ calculadora.calcularMedia()+"\n";
+        JOptionPane.showInputDialog(null, resultados);
     }
 }
 class Calculadora{
