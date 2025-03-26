@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Resposta_07 {
 
-
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
@@ -40,4 +39,3 @@ class Calculadora{
         return (primeiroNumero + segundoNumero + terceiroNumero)/3;
     }
 }
-
