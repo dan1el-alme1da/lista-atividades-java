@@ -9,6 +9,7 @@ public class Resposta_04 {
 
 
         double primeiroNumero;
+
         do {
             System.out.println("Digite o primeiro numero (deve ser positivo e diferente de zero):");
             primeiroNumero = scanner.nextDouble();
