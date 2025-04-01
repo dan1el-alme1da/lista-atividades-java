@@ -21,6 +21,16 @@ public class ClienteArray {
         if(quantidadeClientes < clientes.length){
             clientes[quantidadeClientes] = cliente;
             quantidadeClientes++;
+        }else{
+            System.out.println("NÃO TEM MAIS ESPAÇO NA LISTA DE CLIENTES");
         }
+    }
+    public Cliente[] listaClientes() {
+        Cliente[] clientesCadastrados = new Cliente[quantidadeClientes];
+        for(int i = 0; i < quantidadeClientes; i++){
+            clientesCadastrados[i] = clientes[i];
+
+        }
+        return clientesCadastrados;
     }
 }
