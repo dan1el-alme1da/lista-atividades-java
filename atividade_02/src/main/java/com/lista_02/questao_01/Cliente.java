@@ -1,4 +1,4 @@
-package com.lista_02.questao_02;
+package com.lista_02.questao_01;
 
 public class Cliente {
     private int id;
