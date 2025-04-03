@@ -16,6 +16,7 @@ public class Principal {
             System.out.println("2 - listar clientes");
             System.out.println("3 - sair da aplicação");
 
+
             opcao = scanner.nextInt();
 
             switch(opcao){
@@ -23,15 +24,16 @@ public class Principal {
                     System.out.println("\n--- INSERIR NOVO CLIENTE ---");
 
                     System.out.print("Digite o nome do cliente: ");
-                    String nome = scanner.nextLine();
+                    String nome = scanner.next();
 
                     System.out.print("Digite o CPF do cliente: ");
-                    String cpf = scanner.nextLine();
+                    String cpf = scanner.next();
 
                     System.out.print("Digite o email do cliente: ");
-                    double renda = scanner.nextDouble();
+                    double email = scanner.nextDouble();
 
-                    Cliente novoCliente = new Cliente(nome, cpf, renda);
+
+                    Cliente novoCliente = new Cliente(nome, cpf, email);
                     clienteArray.insere(novoCliente);
 
                     System.out.println("Cliente cadastrado com sucesso!");

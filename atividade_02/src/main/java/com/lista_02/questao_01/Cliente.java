@@ -2,13 +2,14 @@ package com.lista_02.questao_01;
 
 public class Cliente {
     private int id;
-    private String nome;
-    private String fone;
+    private String nome, cpf;
     private double renda;
 
-    public Cliente(String nome, String fone, double renda) {
+
+
+    public Cliente(String nome, String cpf, double renda) {
         this.nome = nome;
-        this.fone = fone;
+        this.cpf = cpf;
         this.renda = renda;
     }
 
@@ -17,6 +18,7 @@ public class Cliente {
     }
 
     public int getId() {
+
 
         return id;
     }
@@ -34,11 +36,11 @@ public class Cliente {
     }
 
     public String getFone() {
-        return fone;
+        return cpf;
     }
 
     public void setFone(String fone) {
-        this.fone = fone;
+        this.cpf = fone;
     }
 
     public double getRenda() {
@@ -54,7 +56,7 @@ public class Cliente {
         return "Cliente{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
-                ", fone='" + fone + '\'' +
+                ", fone='" + cpf + '\'' +
                 ", renda=" + renda +
                 '}';
     }
